@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Shadows+Into+Light');
+
+@import url ('https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet');
+
+
+
+#name {
+  color: orange ;
+  font-family: 'Cedarville Cursive', cursive;
+
+}
+
+a{
+  text-decoration: none;
+  color: purple;
+  font-weight: 900;
+}
+
+a:hover{
+color: orange;
+text-decoration: underline;
+}
+
+body {
+      font-family: 'Inconsolata', monospace;
+      font-size: 12px;
+      background-color: cyan;
+
+      }
