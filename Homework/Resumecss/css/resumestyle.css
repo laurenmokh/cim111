@@ -29,12 +29,14 @@ body {
       text-decoration: underline;
       }
 
-      h3{
+      #h3{
         color: green;
         font-weight: bold;
       }
 
-      ul li{
+      #ul li{
+
         list-style: none;
+        color: purple;
 
         }
