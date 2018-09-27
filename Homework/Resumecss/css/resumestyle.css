@@ -2,14 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 
-
-#name {
-  text-align: center;
-  color: orange ;
-  font-family:'Cedarville Cursive', cursive;
-
-}
-
 body {
       font-family: 'Inconsolata', monospace;
       font-size: 12px;
@@ -19,13 +11,19 @@ body {
 
       .links{
         text-decoration: none;
-        color: purple;
+        color: yellow;
         font-weight: 900;
       }
 
       .links:hover{
-      color: orange;
+      color: green;
       text-decoration: underline;
+      }
+
+
+      .hobbies{
+        color: red;
+
       }
 
     h3{
@@ -33,24 +31,47 @@ body {
         font-weight: bold;
       }
 
+      p{
+        color: orange;
+      }
+
       ul{
 
         list-style: none;
-        color: yellow;
+        color: purple;
 
         }
 
-      p{
+
+      #firstname{
         color: orange;
-
+        font-family:'Cedarville Cursive' cursive;
+        text-align: center;
       }
 
-      table{
+      #surname{
+      color: orange;
+      font-family:'Cedarville Cursive', cursive;
+      text-align: center;
 
-        color: red;
+    }
 
-      }
+    #address{
+      color: pink;
+    }
 
-      address{
-        color: pink;
-      }
+      #contactinfo{
+
+      color: yellow;
+      font-family: sans-serif;
+      font-style: oblique;
+
+}
+
+    #photocaption {
+      color: green;
+}
+
+
+
+    }
