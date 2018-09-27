@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
-<link rel="stylesheet" href="css/resumestyle.css">
 
 
 #name {
@@ -29,14 +28,25 @@ body {
       text-decoration: underline;
       }
 
-      #h3{
-        color: green;
+    h3{
+        color: purple;
         font-weight: bold;
       }
 
-      #ul li{
+      ul{
 
         list-style: none;
         color: purple;
 
         }
+
+      p{
+        color: orange;
+
+      }
+
+      table{
+
+        color: red;
+
+      }
