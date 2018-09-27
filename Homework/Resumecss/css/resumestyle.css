@@ -1,24 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
-@import url ('https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet');
-
+<link rel="stylesheet" href="css/resumestyle.css">
 
 
 #name {
+  text-align: center;
   color: orange ;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family:'Cedarville Cursive', cursive;
 
-}
-
-a{
-  text-decoration: none;
-  color: purple;
-  font-weight: 900;
-}
-
-a:hover{
-color: orange;
-text-decoration: underline;
 }
 
 body {
@@ -27,3 +17,24 @@ body {
       background-color: cyan;
 
       }
+
+      .links{
+        text-decoration: none;
+        color: purple;
+        font-weight: 900;
+      }
+
+      .links:hover{
+      color: orange;
+      text-decoration: underline;
+      }
+
+      h3{
+        color: green;
+        font-weight: bold;
+      }
+
+      ul li{
+        list-style: none;
+
+        }
