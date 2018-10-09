@@ -10,16 +10,20 @@
   background-color: orange;
   width: 180px;
   height: auto;
+
   padding: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+
   border-style: dashed;
   border-width: 5px;
   border-color: red;
+
   border: solid blue 10px;
   border-width: 10px 5px 10px 5px;
+
   margin: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -27,7 +31,6 @@
   margin-left: 50px;
   margin: 50px 50px 50px 50px
   margin: 0 auto;
-
 }
 
 header{
@@ -35,7 +38,7 @@ header{
     width: 960px;
     height: 200px;
     margin: 0 auto;
-    margin-top: -16px;
+    margin-top: -25px;
   }
 
 main{
@@ -59,16 +62,15 @@ nav{
   width: 300px;
   margin: 0 auto;
   background-color: pink;
-
-
 }
+
 nav ul{
 }
 
 nav ul li{
   list-style: none;
   display: inline-block;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 nav ul li a{
@@ -78,6 +80,4 @@ nav ul li a{
 
 nav ul li a:hover{
   color: gray;
-}
-
 }
