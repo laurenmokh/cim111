@@ -1,6 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 body {
       font-family: 'Inconsolata', monospace;
       font-size: 12px;
       background-color: cyan;
 
       }
+
+      #name {
+        font-family: 'Inconsolata', monospace;
+        font-size: 30px;
+        color:green;
+        text-align: center;
+}
+
+.section{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: yellow;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+#about {
+  font-family: 'Inconsolata';
+  font-size: 20px;
+  color: green;
+  text-align: center;
+
+}
+
+#footer{
+color: purple;
+
+}
+
+
+nav{
+  width: 300px;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+nav ul{
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover{
+  color: gray;
+}
