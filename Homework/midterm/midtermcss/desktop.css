@@ -3,14 +3,14 @@
 body {
       font-family: 'Inconsolata', monospace;
       font-size: 12px;
-      background-color: cyan;
+      background-color: steelblue;
 
       }
 
       #name {
         font-family: 'Inconsolata', monospace;
         font-size: 30px;
-        color:green;
+        color:darkgreen;
         text-align: center;
 }
 
@@ -26,13 +26,14 @@ body {
 #about {
   font-family: 'Inconsolata';
   font-size: 20px;
-  color: green;
+  color: darkgreen;
   text-align: center;
 
 }
 
 #footer{
 color: purple;
+text-align: center;
 
 }
 
@@ -40,7 +41,7 @@ color: purple;
 nav{
   width: 300px;
   margin: 0 auto;
-  background-color: pink;
+  background-color: steelblue;
 }
 
 nav ul{
@@ -54,9 +55,13 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color: black;
+  color: limegreen;
 }
 
 nav ul li a:hover{
-  color: gray;
+  color: blue;
+}
+
+#container1{
+text-align: center;
 }
