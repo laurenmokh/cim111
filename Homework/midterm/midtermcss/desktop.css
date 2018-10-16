@@ -12,6 +12,11 @@ body {
         font-size: 50px;
         color:darkgreen;
         text-align: center;
+        background-color: steelblue;
+        width: 900px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 25px;
 }
 
 
@@ -34,6 +39,7 @@ nav{
   width: 300px;
   margin: 0 auto;
   background-color: steelblue;
+
 }
 
 nav ul{
