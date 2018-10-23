@@ -4,9 +4,8 @@
 
 
 body {
-      font-family: 'Hind Guntur', sans-serif;
-      font-size: 12px;
       background-color: steelblue;
+      font-family: 'Hind Guntur', sans-serif;
 
       }
 
@@ -24,7 +23,7 @@ body {
 
 
 #about {
-  font-family: 'Inconsolata';
+  font-family: 'Hind Guntur', sans-serif;
   font-size: 20px;
   color: limegreen;
   text-align: center;
@@ -59,15 +58,14 @@ nav ul li a{
   text-decoration: none;
   color: limegreen;
   font-size: 20px
+
+
 }
 
 nav ul li a:hover{
-  color: blue;
+  color: lightcyan;
 }
 
-#container1{
-text-align: center;
-}
 
 #box{
   background-color: steelblue;
@@ -118,19 +116,19 @@ text-align: center;
   margin-left: 50px;
   margin: 50px 50px 50px 50px
 
-
 }
 
 .col1{
+position: relative;
 display: left;
 }
 
 .col2{
-display: center;
+position: relative;
+left: 500px;
 
 }
 
 .col3{
-
-display: right;
-}
+  position: relative;
+  left:1000px; }
