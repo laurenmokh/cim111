@@ -1,5 +1,25 @@
-@import "midtermcss/desktop.css";
+@import "desktop.css";
 
 body{
   background-color: steelblue;
+}
+
+#imageGrid{
+  display: grid;
+  grid-template-areas: "col1" "col2" "col3";
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid2 {
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(1fr,9);
+  grid-gap: 20px;
+  width: 100%;
+  height: auto;
+  grid-gap: 0.5em;
+  justify-content: center;
+
 }

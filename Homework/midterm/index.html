@@ -6,8 +6,8 @@
 
     <head>
       <title>Worldly Wanders</title>
-      <link rel="stylesheet" href="midtermcss/desktop.css" media="only screen and (min-width:600px)">
-      <link rel="stylesheet" href="midtermcss/mobile.css" media="only screen and (min-width: 600px)">
+      <link rel="stylesheet" href="midtermcss/desktop.css" media="only screen and (min-width:800px)">
+      <link rel="stylesheet" href="midtermcss/mobile.css" media="only screen and (max-width: 800px)">
 
       <!-- Prevent smartphones from scaling pages down -->
     <meta name="viewport" content="initial-scale=1">
@@ -33,13 +33,22 @@
             <br> To wanderlust!
  </p>
 
- <p id="box">
-   <img src = "images/travel.jpeg" height="300">
-   <img src = "images/scrabble.jpeg" height = "300">
-   <img src = "images/plane.jpeg" height = "300" width="300">
-    <img src = "images/map.jpeg" height = "490" width="975">
- </div>
-  </p>
+ <section id="box">
+   <section id="imageGrid">
+     <div id="col1">
+       <img class="imageGridImg" src="images/travel.jpeg" >
+     </div>
+     <div id="col2">
+       <img class="imageGridImg" src="images/scrabble.jpeg" >
+     </div>
+     <div id="col3"> <img class="imageGridImg" src="images/plane.jpeg" ></div>
+   </section>
+
+   <img src="images/map.jpeg" width="100%">
+
+ </section>
+
+
 
           </main>
         <footer>
