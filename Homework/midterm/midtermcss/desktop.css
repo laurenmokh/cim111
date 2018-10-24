@@ -68,7 +68,7 @@ nav ul li a:hover{
 
 #box{
   background-color: steelblue;
-  width: 1190px;
+  width: 1055px;
   height: 800px;
   text-align: center;
 
@@ -82,12 +82,8 @@ nav ul li a:hover{
   border-width: 5px;
   border-color: limegreen;
 
-  margin: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin: 50px 50px 50px 50px
+  margin: auto;
+
 
 }
 
@@ -148,6 +144,6 @@ text-align: center;
 
   .photos{
 
-    margin: 20px 20px 20px 
+    margin: 20px 20px 20px
 
   }
