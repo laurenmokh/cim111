@@ -128,3 +128,18 @@ text-align: center;
   justify-content: center;
 
 }
+
+.location
+{
+  text-align: center;
+  font-family: 'Hind Guntur', sans-serif;'
+  font-size: 50px;
+  color: limegreen;
+
+}
+
+#gallery{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
