@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers|Julius+Sans+One|Permanent+Marker|Sigmar+One');
 @import url('https://fonts.googleapis.com/css?family=Hind+Guntur');
 
-
 body {
       background-color: steelblue;
       font-family: 'Hind Guntur', sans-serif;
@@ -69,7 +68,7 @@ nav ul li a:hover{
 
 #box{
   background-color: steelblue;
-  width: 1200px;
+  width: 1190px;
   height: 800px;
   text-align: center;
 
@@ -92,43 +91,42 @@ nav ul li a:hover{
 
 }
 
-.Locations {
+}
 
-  background-color: lightcyan;
-  width: 300px;
-  height: 500;
-  text-align: center;
-
-  padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  border-style: double;
-  border-width: 5px;
-  border-color: limegreen;
-
-  margin: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin: 50px 50px 50px 50px
+.grid2 {
+display: grid;
+grid-template-columns: 50px 50px 50px;
+grid-template-rows: 50px 50px 50px;
+grid-gap: 20px;
+max-width: 100px;
+max-height: 100px;
 
 }
 
-.col1{
-position: relative;
-display: left;
+.grid-item{
+
+background-color: lightcyan;
+border-style: double;
+border-width: 5px;
+border-color: limegreen;
+font-size: 12px;
+font-family: 'Hind Guntur', sans-serif;
+color: steelblue;
+text-align: center;
+
 }
 
-.col2{
-position: relative;
-left: 500px;
+.grid2 {
+
+  display: inline-grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 20px;
+  width: 100%;
+  height: 500px;
+  grid-gap: 0.5em;
+  justify-content: center;
+
+
 
 }
-
-.col3{
-  position: relative;
-  left:1000px; }
