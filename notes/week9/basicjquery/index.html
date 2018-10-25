@@ -7,6 +7,17 @@
 
   <body>
       <h1 id="textChange">Intro to javascript</h1>
+
+      <h2 id="info">Mouse over to see more info. </h2>
+      <div id="recepticle"></div>
+
+      <h2> Click to view images</h2>
+      <img id="image1" src="" width="100">
+      <img id="image2" src="" width="100">
+      <div id="imageRecepticle"></div>
+
+
+
       <!--Local jquery script-->
       <script src="js/jquery-3.3.1.min.js"> </script>
       <!-- Remote Version -->
@@ -23,9 +34,25 @@
 
         $("textChange").click(function(){
 
-        $("body").css("background-color", "orange"); 
+        $("body").css("background-color", "orange");
 
         });//End of textChange click
+
+        $("#info").mouseenter(funtion(){
+          $("#recepticle").html("<em> This information is imoprtant</em>");
+          $("#info").css ("background-color", "blue");
+        });
+
+        $("#info",mouseleave (funtion(){
+          $("#recepticle".html ("");
+          $("#info").css("background-color", "transparent");
+        });
+
+        $("#info").click(function(){
+          $("#imageRecepticle")
+
+
+        }
 
 
       });//End of document ready
