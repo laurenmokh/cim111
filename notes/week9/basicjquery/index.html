@@ -4,6 +4,13 @@
   <head>
     <title> Intro to javascript</title>
 
+    <style>
+      .box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
   </head>
 
   <body>
@@ -13,15 +20,23 @@
       <div id="recepticle"></div>
 
       <h2> Click to view images</h2>
-      <img id="image1" src="" width="100">
-      <img id="image2" src="" width="100">
+      <img id="image1" src="https://c8.staticflickr.com/4/3009/3053282277_c439242c94_o.jpg" width="100">
+      <img id="image2" src="https://farm7.staticflickr.com/7444/11892550395_1d58585a3c_o.jpg" width="100">
       <div id="imageRecepticle"></div>
 
       <ul>
         <li id="show"> Show</li>
         <li id="hide"> Hide</li>
-        <li id="toggle"> Toggle</li>
+        <li id="toggle">Toggle</li>
+      </ul>
 
+      <div class="box"></div>
+
+      <div class="box"></div>
+
+      <div class="box"></div>
+
+      <div class="box"></div>
 
 
 
@@ -34,6 +49,9 @@
       <script>
       $(document).ready(function() {
         //All jquery code should be placed below
+
+        $(".box").hide();
+
         $("body").css("background-color", "purple");
         $("h1").css("color","white");
         $("h1").css("font-size", "40px");
@@ -56,32 +74,23 @@
           $("#info").css("background-color", "transparent");
         });
 
-        $("#info").click(function(){
-          $("#imageRecepticle").html('img src'=)
-
-        }
-
-        $("#info").click(function(){
-          $("imageRecepticle").html('img src'=);
-
-        });
-
-        $("#hide").click(funtion(){
-          $(".box").hide();
-
-        });
-
-
-        $("#hide").click(funtion(){
-          $(".box").hide();
-
-
-        });
-
-
-
-
-      });//End of document ready
+        $("#image1").click(function(){
+           $("#imageRecepticle").html('<img src="https://c8.staticflickr.com/4/3009/3053282277_c439242c94_o.jpg" width="300">');
+         });
+         $("#image2").click(function(){
+           $("#imageRecepticle").html('<img src="https://farm7.staticflickr.com/7444/11892550395_1d58585a3c_o.jpg" width="300">');
+         });
+         $("#hide").click(function(){
+           $(".box").hide();
+         });
+         $("#show").click(function(){
+           $(".box").show();
+         });
+         $("#toggle").click(function(){
+           $(".box").toggle(1000);
+         });
+         
+       });// End of document ready
 
 
 </script>
