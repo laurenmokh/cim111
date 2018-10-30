@@ -3,46 +3,22 @@
 <html>
 
 <head>
-<style>
+
+  <title> Baking Brownies (How-To)</title>
+
+  <style>
 
 @import url('https://fonts.googleapis.com/css?family=Monofett');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-#title{
-  font-size: 30px;
-  color: gold;
-  font-family: 'Monofett', cursive;
-  text-align: center;
-}
+  </style>
 
-body{
-background-color: sienna;
-
-}
-
-.text{
-color:gold;
-font-family: 'Poppins', sans-serif;
-
-
-}
-
-#footer{
-color: white;
-font-family: 'Poppins', sans-serif;
-
-}
-
-</style>
-
-
-<title> Baking Brownies (How-To)</title>
 </head>
 
 <body>
 
 <header>
-  <h1 id="title"> Baking Brownies (How-To)</h1>
+  <h1 id="textChange"> Baking Brownies</h1>
 </header>
 
 <ul class="text">
@@ -66,15 +42,43 @@ font-family: 'Poppins', sans-serif;
     <li> Enjoy!</li>
 
 <ul class="text">
-  <h3> Tips</h3>
+  <h3> Tips:</h3>
     <li> All ovens cook differently, so make sure to keep an eye out when brownies are cooking in the oven. Check brownies at the minimum baking time by inserting a toothpick in the brownie mix. If the toothpick comes out clean, the brownies are finished. If not, bake for an additional 5 minutes.</li>
     <li> Enjoy warm brownies with a glass of cold milk!</li>
 </ul>
 
+<!--Local jquery script-->
+<script src="js2/jquery-3.3.1.min.js"> </script>
+<!-- Remote Version -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 
-<footer>
-<p id="footer"> Created by Lauren Mokhtarzadeh</p>
-</footer>
+<script>
+$(document).ready(function() {
+  //All jquery code should be placed below
+
+  $("body").css("background-color", "sienna");
+  $("#textChange").css("color","gold");
+  $("#textChange").css("font-size", "30px");
+  $("#textChange").css("font-family","Monofett, cursive");
+  $("#textChange").css("text-align", "center");
+  $(".text").css("color", "gold");
+  $(".text").css("font-family", "Poppins, sans-serif");
+  $("#textChange").html("Baking Brownies (How-To)");
+  $("textChange").click(function(){
+});
+
+  });//End of textChange click
+
+
+
+
+
+
+
+
+
+</script>
+
 
 </body>
 
