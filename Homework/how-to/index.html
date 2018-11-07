@@ -4,80 +4,116 @@
 
 <head>
 
-  <title> Baking Brownies (How-To)</title>
+  <title> Baking Brownies(How-To)</title>
+  <link rel="stylesheet" href="midtermcss/desktop.css" media="only screen and (min-width:800px)">
+  <link rel="stylesheet" href="midtermcss/mobile.css" media="only screen and (max-width: 800px)">
 
-  <style>
+  <!-- Prevent smartphones from scaling pages down -->
+<meta name="viewport" content="initial-scale=1">
+
+<style>
 
 @import url('https://fonts.googleapis.com/css?family=Monofett');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-  </style>
+</style>
 
 </head>
 
 <body>
-
-<header>
   <h1 id="textChange"> Baking Brownies</h1>
-</header>
 
-<ul class="text">
+<ul class="ingredients">
   <h3>Ingredients:</h3>
   <li> 1 box of Trader Joe's Brownie Truffle baking mix</li>
   <li> 2 large eggs</li>
   <li> 1 stick of butter</li>
+  <img id="ingredientsimage">
+  <div id="imageRecepticle"></div>
 </ul>
 
 <ol class="text">
   <h3> Directions: </h3>
     <li> Preheat oven to 350 degrees</li>
     <li> Lightly grease pan with butter or cooking spray</li>
+    <img src="images/step2.jpg" width="300">
     <li> Melt butter in microwave for 1 minute</li>
+    <img src="images/step3.jpg" width="300">
     <li>Whisk in eggs until blended</li>
+    <img src="images/step4.jpg" width="300">
     <li> Add brownie mix</li>
+    <img src="images/step5.jpg" width="300">
     <li> Mix all ingredients together until thick paste is made</li>
+    <img src="images/step6.jpg" width="300">
     <li> Spread batter in pan, filling corners</li>
+    <img src="images/step7.jpg" width="300">
     <li> Bake for 25-30 minutes</li>
+    <img src="images/step8.jpg" width="300">
     <li> Allow to cool for another 30 mins</li>
     <li> Enjoy!</li>
 
-<ul class="text">
+<ul id="tips">
   <h3> Tips:</h3>
-    <li> All ovens cook differently, so make sure to keep an eye out when brownies are cooking in the oven. Check brownies at the minimum baking time by inserting a toothpick in the brownie mix. If the toothpick comes out clean, the brownies are finished. If not, bake for an additional 5 minutes.</li>
-    <li> Enjoy warm brownies with a glass of cold milk!</li>
+  <div id="recepticle"></div>
+
 </ul>
 
 <!--Local jquery script-->
 <script src="js2/jquery-3.3.1.min.js"> </script>
 <!-- Remote Version -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-$(document).ready(function() {
+$(document).ready(function(){
   //All jquery code should be placed below
-
   $("body").css("background-color", "sienna");
-  $("#textChange").css("color","gold");
-  $("#textChange").css("font-size", "50px");
-  $("#textChange").css("font-family","Monofett, cursive");
-  $("#textChange").css("text-align", "center");
-  $(".text").css("color", "gold");
-  $(".text").css("font-family", "Poppins, sans-serif");
-  $("#textChange").html("Baking Brownies (How-To)");
-  $("textChange").click(function(){
+  $("h1").css("color", "gold");
+  $("h1").css("font-family","Monofett, cursive");
+  $("h1").css("font-size", "50px");
+  $("h1").css("text-align", "center");
+  $("#textChange").css("background-color","seagreen");
+  $("#textChange").html("Baking Brownies <br>(How-To)");
+});//End of textChange click
+
+  $("h3").css("color", "gold");
+  $(".ingredients").css("color", "gold");
+  $(".ingredients").css("font-family", "Poppins, sans-serif");
+
+
+  $("#hide").click(function(){
+ $("ingredientsimage").hide();
+ });
+$("#toggle").click(function(){
+("#ingredientsimage").toggle(1000);
 });
 
-  });//End of textChange click
 
 
 
-  $(document).ready(function(){
-            //all js goes in here
-
-          });
 
 
 
+
+
+
+
+
+
+  $(".text").css("color", "gold");
+  $(".text").css("font-family", "Poppins, sans-serif");
+
+
+  $("#tips").css("color", "gold");
+  $("#tips").css("color", "gold");
+  $("#tips").css("font-family", "Poppins, sans-serif");
+  $("#tips").mouseenter(function(){
+    $("#recepticle").html("<li>All ovens cook differently, so make sure to keep an eye out when brownies are cooking in the oven. Check brownies at the minimum baking time by inserting a toothpick in the brownie mix. If the toothpick comes out clean, the brownies are finished. If not, bake for an additional 5 minutes.</li> <li> Enjoy warm brownies with a glass of cold milk!</li>");
+    $("#tips").css("background-color", "purple");
+  });
+  $("#tips").mouseleave(function(){
+    $("#recepticle").html("");
+    $("#tips").css("background-color", "transparent");
+  });
 
 
 </script>
