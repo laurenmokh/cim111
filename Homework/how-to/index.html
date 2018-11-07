@@ -23,33 +23,33 @@
 <body>
   <h1 id="textChange"> Baking Brownies</h1>
 
-<ul class="ingredients">
-  <h3>Ingredients:</h3>
+<ul id="ingredients">
+  <h3> Ingredients:</h3>
   <li> 1 box of Trader Joe's Brownie Truffle baking mix</li>
   <li> 2 large eggs</li>
   <li> 1 stick of butter</li>
-  <img id="ingredientsimage">
-  <div id="imageRecepticle"></div>
-</ul>
+  <img id="ingredientsimage" src="images/ingredients.jpg" width="300">
+  </ul>
 
 <ol class="text">
   <h3> Directions: </h3>
     <li> Preheat oven to 350 degrees</li>
-    <li> Lightly grease pan with butter or cooking spray</li>
-    <img src="images/step2.jpg" width="300">
-    <li> Melt butter in microwave for 1 minute</li>
-    <img src="images/step3.jpg" width="300">
-    <li>Whisk in eggs until blended</li>
-    <img src="images/step4.jpg" width="300">
-    <li> Add brownie mix</li>
-    <img src="images/step5.jpg" width="300">
-    <li> Mix all ingredients together until thick paste is made</li>
-    <img src="images/step6.jpg" width="300">
-    <li> Spread batter in pan, filling corners</li>
-    <img src="images/step7.jpg" width="300">
-    <li> Bake for 25-30 minutes</li>
-    <img src="images/step8.jpg" width="300">
-    <li> Allow to cool for another 30 mins</li>
+    <li class="directionimages"> Lightly grease pan with butter or cooking spray</li>
+    <img class="images" src="images/step2.jpg" width="300">
+    <li class="directionimages"> Melt butter in microwave for 1 minute</li>
+    <img class="images" src="images/step3.jpg" width="300">
+    <li class="directionimages">Whisk in eggs until blended</li>
+    <img class="images" src="images/step4.jpg" width="300">
+    <li class="directionimages"> Add brownie mix</li>
+    <img class="images" src="images/step5.jpg" width="300">
+    <li class="directionimages"> Mix all ingredients together until thick paste is made</li>
+    <img class="images" src="images/step6.jpg" width="300">
+    <li class="directionimages"> Spread batter in pan, filling corners</li>
+    <img class="images"src="images/step7.jpg" width="300">
+    <li class="directionimages"> Bake for 25-30 minutes</li>
+    <img class="images" src="images/step8.jpg" width="300">
+    <li class="directionimages"> Allow to cool for another 30 mins</li>
+    <img class="images" src="images/step9.jpg" width="300">
     <li> Enjoy!</li>
 
 <ul id="tips">
@@ -74,34 +74,24 @@ $(document).ready(function(){
   $("#textChange").css("background-color","seagreen");
   $("#textChange").html("Baking Brownies <br>(How-To)");
 });//End of textChange click
-
   $("h3").css("color", "gold");
-  $(".ingredients").css("color", "gold");
-  $(".ingredients").css("font-family", "Poppins, sans-serif");
+  $("#ingredients").css("color", "gold");
+  $("#ingredients").css("font-family", "Poppins, sans-serif");
 
+  $("#ingredients").click(function() {
+    $("#ingredientsimage").toggle(1000);
+  });
 
-  $("#hide").click(function(){
- $("ingredientsimage").hide();
- });
-$("#toggle").click(function(){
-("#ingredientsimage").toggle(1000);
-});
+  $(".directionimages" ).click(function() {
+  $(".images").toggle(1000);
+  });
 
-
-
-
-
-
-
-
-
-
-
-
+  $( ".directionimages" ).click(function() {
+    $(".images").show();
+  });
 
   $(".text").css("color", "gold");
   $(".text").css("font-family", "Poppins, sans-serif");
-
 
   $("#tips").css("color", "gold");
   $("#tips").css("color", "gold");
