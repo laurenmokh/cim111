@@ -8,6 +8,11 @@
   <link rel="stylesheet" media="only screen and (min-width:800px)">
   <link rel="stylesheet" media="only screen and (max-width: 800px)">
 
+  <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.pagepiling.js"></script>
+
   <!-- Prevent smartphones from scaling pages down -->
 <meta name="viewport" content="initial-scale=1">
 
@@ -21,7 +26,15 @@
 
 <body>
 
-<h1> Down Under to <br> AUSTRALIA </h1>
+  <h1> Down Under to <br> AUSTRALIA </h1>
+
+  <div id="pagepiling">
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+</div>
+
 
 <h3 class="text"> Getting to know... Australia!</h3>
 
@@ -54,13 +67,9 @@ $(document).ready(function(){
   $(".text").css("color","saddleBrown");
   $(".text").css("font-family", "Baloo Thambi","cursive");
 
-
-
-
-
-
-
-
+  $(document).ready(function() {
+  	$('#pagepiling').pagepiling();
+  });
 
   });
 
