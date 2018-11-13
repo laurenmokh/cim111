@@ -8,10 +8,10 @@
   <link rel="stylesheet" media="only screen and (min-width:800px)">
   <link rel="stylesheet" media="only screen and (max-width: 800px)">
 
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="lightbox.js"></script>
+  <script type="text/javascript" src="js3/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="jquery-lightbox-master/jquery.lightbox.js"></script>
 
-  <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="jquery-lightbox-master/css/lightbox.css" type="text/css" media="screen" />
 
 
   <!-- Prevent smartphones from scaling pages down -->
@@ -42,16 +42,11 @@
 <li>Byron Bay</li>
 </ol>
 
-<a href="images/image1.jpeg" class="lightbox">image #1</a>
 <a href="images/image2.jpeg" class="lightbox">image #2</a>
 <a href="images/image3.jpeg" class="lightbox">image #3</a>
 <a href="images/image4.jpeg" class="lightbox">image #4</a>
 <a href="images/image5.jpeg" class="lightbox">image #5</a>
 
-<!--Local jquery script-->
-<script src="js3/jquery-3.3.1.min.js"> </script>
-<!-- Remote Version -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -65,6 +60,8 @@ $(document).ready(function(){
 
   $(".text").css("color","saddleBrown");
   $(".text").css("font-family", "Baloo Thambi","cursive");
+
+  $('.lightbox').lightbox();
 
 
 
