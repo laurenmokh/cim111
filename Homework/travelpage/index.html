@@ -8,10 +8,11 @@
   <link rel="stylesheet" media="only screen and (min-width:800px)">
   <link rel="stylesheet" media="only screen and (max-width: 800px)">
 
-  <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="lightbox.js"></script>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.pagepiling.js"></script>
+  <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
 
   <!-- Prevent smartphones from scaling pages down -->
 <meta name="viewport" content="initial-scale=1">
@@ -33,6 +34,8 @@
 	<div class="section">Some section</div>
 	<div class="section">Some section</div>
 	<div class="section">Some section</div>
+  <div class="section">Some section</div>
+
 </div>
 
 
@@ -48,6 +51,12 @@
 <li>Perth</li>
 <li>Byron Bay</li>
 </ol>
+
+<a href="images/image1.jpeg" class="lightbox">image #1</a>
+<a href="images/image2.jpeg" class="lightbox">image #2</a>
+<a href="images/image3.jpeg" class="lightbox">image #3</a>
+<a href="images/image4.jpeg" class="lightbox">image #4</a>
+<a href="images/image5.jpeg" class="lightbox">image #5</a>
 
 <!--Local jquery script-->
 <script src="js3/jquery-3.3.1.min.js"> </script>
@@ -67,9 +76,7 @@ $(document).ready(function(){
   $(".text").css("color","saddleBrown");
   $(".text").css("font-family", "Baloo Thambi","cursive");
 
-  $(document).ready(function() {
-  	$('#pagepiling').pagepiling();
-  });
+
 
   });
 
