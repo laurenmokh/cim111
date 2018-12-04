@@ -9,10 +9,10 @@
   <link rel="stylesheet" media="only screen and (max-width: 800px)">
 
   <script type="text/javascript" src="js3/jquery-3.3.1.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script> -->
   <script src="jquery-lightbox-master/jquery.lightbox.js" type="text/javascript"></script>
 
-  <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="jquery-lightbox-master/css/lightbox.css" type="text/css" media="screen" />
 
   <!-- Prevent smartphones from scaling pages down -->
 <meta name="viewport" content="initial-scale=1">
@@ -42,11 +42,11 @@
 <li>Byron Bay</li>
 </ol>
 
-<a href="images/sydney.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="https://unsplash.com/photos/DLbCETd599Y" height="50"/></a>
-<a href="images/animal.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="https://unsplash.com/photos/Yg_sNKOiXvY" height="50"/></a>
-<a href="images/nature.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="https://unsplash.com/photos/IKlpLl7HVo0" height="50"/></a>
-<a href="images/pool.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="https://unsplash.com/photos/AZMsLxWYODQ" height="50"/></a>
-<a href="images/city.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="https://unsplash.com/photos/idPQ7Sc5dEE" height="50"/></a>
+<a href="images/sydney.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="images/sydney.jpeg" height="50" width="70"/></a>
+<a href="images/animal.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="images/animal.jpeg" height="50" width="70"/></a>
+<a href="images/nature.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="images/nature.jpeg" height="50" width="70"/></a>
+<a href="images/pool.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="images/pool.jpeg" height="50" width="70"/></a>
+<a href="images/city.jpeg" class="lightbox" rel="Australia" title="Photo by Unsplash"><img src="images/city.jpeg" height="50" width="70"/></a>
 
 
 <script>
@@ -62,6 +62,8 @@ $(document).ready(function(){
 
   $(".text").css("color","saddleBrown");
   $(".text").css("font-family", "Baloo Thambi","cursive");
+
+  $(".lightbox").lightbox();
 
   });
 
