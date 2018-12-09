@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bungee|Faster+One');
+
+body {
+      background-color: mediumpurple;
+      }
+
+      #name {
+        font-family: 'Faster One', cursive;
+        font-size: 45px;
+        color:orange;
+        text-align: center;
+        width: 900px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 25px;
+}
+
+
+#info {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+
+}
+
+nav{
+  width: 700px;
+  margin: 0 auto;
+  background-color: mediumpurple;
+  text-align: center;
+  font-family: 'Bungee', cursive;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: orange;
+  font-size: 15px
+}
+
+nav ul li a:hover{
+  color: lightcyan;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#info {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
