@@ -113,7 +113,7 @@ text-align: center;
 
   display: grid;
   grid-template-columns: 330px 330px 330px 330px;
-  grid-template-rows: 450px 450px;
+  grid-template-rows: 550px;
   grid-gap: 20px;
   width: 100%;
   height: auto;
