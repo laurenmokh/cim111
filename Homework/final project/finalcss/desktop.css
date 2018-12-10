@@ -107,5 +107,30 @@ font-size: 20px;
 font-family: 'Alegreya Sans SC', sans-serif;
 color: white;
 text-align: center;
+}
 
+
+.fashion{
+
+  display: grid;
+  grid-template-columns: 330px 330px 330px 330px;
+  grid-template-rows: 450px 450px;
+  grid-gap: 20px;
+  width: 100%;
+  height: 400px;
+  grid-gap: 0.5em;
+  justify-content: center;
+
+}
+
+.fashionlist{
+
+background-color: mediumpurple;
+border-style: double;
+border-width: 5px;
+border-color: orange;
+font-size: 20px;
+font-family: 'Alegreya Sans SC', sans-serif;
+color: white;
+text-align: center;
 }
