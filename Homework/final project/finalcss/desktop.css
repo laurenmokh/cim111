@@ -88,11 +88,10 @@ text-align: center;
 
   display: grid;
   grid-template-columns: 330px 330px 330px 330px;
-  grid-template-rows: 450px 450px;
-  grid-gap: 20px;
+  grid-template-rows: 475px 475px;
   width: 100%;
   height: 1000px;
-  grid-gap: 0.5em;
+  grid-column-gap: 0.5em;
   justify-content: center;
 
 }
@@ -133,4 +132,30 @@ font-size: 20px;
 font-family: 'Alegreya Sans SC', sans-serif;
 color: white;
 text-align: center;
+}
+
+.question{
+
+background-color: mediumpurple;
+border-style: double;
+border-width: 5px;
+border-color: orange;
+font-size: 15px;
+font-family: 'Alegreya Sans SC', sans-serif;
+color: white;
+text-align: left;
+
+}
+
+.FAQ {
+
+  display: grid;
+  grid-template-columns: 1400px;
+  grid-template-rows: 500px 500px 500px 500px 500px 500px;
+  grid-gap: 20px;
+  width: 100%;
+  height: 500px;
+  grid-gap: 0.5em;
+  justify-content: left;
+
 }
