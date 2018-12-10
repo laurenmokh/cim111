@@ -87,9 +87,9 @@ text-align: center;
 .lineup {
 
   display: grid;
-  grid-template-columns: 330px 330px 330px 330px;
+  grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 475px 475px;
-  width: 100%;
+  width: auto;
   height: 1000px;
   grid-column-gap: 0.5em;
   justify-content: center;
@@ -116,7 +116,7 @@ text-align: center;
   grid-template-rows: 450px 450px;
   grid-gap: 20px;
   width: 100%;
-  height: 400px;
+  height: auto;
   grid-gap: 0.5em;
   justify-content: center;
 
