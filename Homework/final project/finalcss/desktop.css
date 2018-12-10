@@ -84,28 +84,28 @@ text-align: center;
   justify-content: center;
 }
 
-.lineup{
+.lineup {
 
-background-color: lavender;
-border-style: double;
-border-width: 5px;
-border-color: orange;
-font-size: 12px;
-font-family: 'Alegreya Sans SC', sans-serif;
-color: chocolate;
-text-align: center;
+  display: grid;
+  grid-template-columns: 330px 330px 330px 330px;
+  grid-template-rows: 450px 450px;
+  grid-gap: 20px;
+  width: 100%;
+  height: 1000px;
+  grid-gap: 0.5em;
+  justify-content: center;
 
 }
 
-.lineup2 {
+.lineup2{
 
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px;
-  grid-gap: 20px;
-  width: auto;
-  height: auto;
-  grid-gap: 0.5em;
-  justify-content: center;
+background-color: mediumpurple;
+border-style: double;
+border-width: 5px;
+border-color: orange;
+font-size: 20px;
+font-family: 'Alegreya Sans SC', sans-serif;
+color: white;
+text-align: center;
 
 }
