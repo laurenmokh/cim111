@@ -9,9 +9,9 @@
 
       <script type="text/javascript" src="js4/jquery-3.3.1.min.js"></script>
 
-      <script src="jquery-lightbox-master/jquery.lightbox.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.3/dist/jquery.fancybox.min.css"/>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.3/dist/jquery.fancybox.min.js"></script>
 
-      <link rel="stylesheet" href="jquery-lightbox-master/css/lightbox.css" type="text/css" media="screen"/>
 
       <!-- Prevent smartphones from scaling pages down -->
       <meta name="viewport" content="initial-scale=1">
@@ -47,9 +47,9 @@
           </ul>
 
           <b>70s Fashion Gallery</b><br>
-          <a href="images/70s1.jpg" class="lightbox" title="70s Fashion"><img src="images/70s1.jpg" height="60" width="80"/></a>
-          <a href="images/70s2.jpg" class="lightbox" title="70s Fashion"><img src="images/70s2.jpg" height="60" width="80"/></a>
-          <a href="images/70s3.jpg" class="lightbox" title="70s Fashion"><img src="images/70s3.jpg" height="60" width="80"/></a>
+          <a data-fancybox="gallery" href="images/70s1.jpg"><img src="images/70s1.jpg" width="80"></a>
+          <a data-fancybox="gallery" href="images/70s2.jpg"><img src="images/70s2.jpg" width="80"></a>
+          <a data-fancybox="gallery" href="images/70s3.jpg"><img src="images/70s3.jpg" width="80"></a>
         </div>
 
         <div class="fashionlist"><b>80s Fashion</b><br>
@@ -67,9 +67,9 @@
           </ul>
 
         <b>80s Fashion Gallery</b><br>
-            <a href="images/80s1.jpg" class="lightbox" title="80s Fashion"><img src="images/80s1.jpg" height="60" width="80"/></a>
-            <a href="images/0s2.jpg" class="lightbox" title="80s Fashion"><img src="images/80s2.jpg" height="60" width="80"/></a>
-            <a href="images/80s3.jpg" class="lightbox" title="80s Fashion"><img src="images/80s3.jpg" height="60" width="80"/></a>
+        <a data-fancybox="gallery" href="images/80s1.jpg"><img src="images/80s1.jpg" width="80"></a>
+        <a data-fancybox="gallery" href="images/80s2.jpg"><img src="images/80s2.jpg" width="80"></a>
+        <a data-fancybox="gallery" href="images/80s3.jpg"><img src="images/80s3.jpg" width="80"></a>
         </div>
 
         <div class="fashionlist"><b>90s Fashion</b><br>
@@ -91,9 +91,9 @@
           </ul>
 
         <b>90s Fashion Gallery</b><br>
-            <a href="images/90s1.jpg" class="lightbox" title="90s Fashion"><img src="images/90s1.jpg" height="60" width="80"/></a>
-            <a href="images/90s2.jpg" class="lightbox" title="90s Fashion"><img src="images/90s2.jpg" height="60" width="80"/></a>
-            <a href="images/90s3.jpg" class="lightbox" title="90s Fashion"><img src="images/90s3.jpg" height="60" width="80"/></a>
+        <a data-fancybox="gallery" href="images/90s1.jpg"><img src="images/90s1.jpg" width="80"></a>
+        <a data-fancybox="gallery" href="images/90s2.jpg"><img src="images/90s2.jpg" width="80"></a>
+        <a data-fancybox="gallery" href="images/90s3.jpg"><img src="images/90s3.jpg" width="80"></a>
       </div>
 
         <div class="fashionlist"><b>2000s Fashion</b> <br>
@@ -114,12 +114,9 @@
           </ul>
 
           <b>2000s Fashion Gallery</b><br>
-            <a href="images/2000s1.jpg" class="lightbox" title="2000s Fashion"><img src="images/2000s1.jpg" height="80" width="80"/></a>
-            <a href="images/2000s2.jpg" class="lightbox" title="2000s Fashion"><img src="images/2000s2.jpg" height="80" width="80"/></a>
-            <a href="images/2000s3.jpg" class="lightbox" title="2000s Fashion"><img src="images/2000s3.jpg" height="80" width="80"/></a>
-            <a href="images/2000s4.jpg" class="lightbox" title="2000s Fashion"><img src="images/2000s4.jpg" height="80" width="80"/></a>
-            <a href="images/2000s5.jpg" class="lightbox" title="2000s Fashion"><img src="images/2000s5.jpg" height="80" width="80"/></a>
-            <a href="images/2000s6.jpg" class="lightbox" title="2000s Fashion"><img src="images/2000s6.jpg" height="80" width="80"/></a>
+          <a data-fancybox="gallery" href="images/2000s1.jpg"><img src="images/2000s1.jpg" width="80"></a>
+          <a data-fancybox="gallery" href="images/2000s2.jpg"><img src="images/2000s2.jpg" width="80"></a>
+          <a data-fancybox="gallery" href="images/2000s3.jpg"><img src="images/2000s3.jpg" width="80"></a>
             </div>
       </div>
 
@@ -152,15 +149,10 @@
             $("#footer").css("background-color", "transparent");
           });
 
-          $(".lightbox").lightbox();
-
-
 
           });
 
         </script>
-
-        <script src="js/blueimp-gallery.min.js"></script>
 
 
     </body>
